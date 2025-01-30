@@ -5,6 +5,7 @@ import java.awt.Graphics;
 import java.awt.Image;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
+import java.security.SecureRandom;
 import java.util.Random;
 import javax.swing.ImageIcon;
 import javax.swing.JLabel;
@@ -68,7 +69,7 @@ public class Board extends JPanel {
 
         int cell;
 
-        var random = new Random();
+        var random = new SecureRandom();
         inGame = true;
         minesLeft = N_MINES;
 
